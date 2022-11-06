@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.views import generic as views
 # Create your views here.
-from valavio.common.view_mixins import RedirectToDashboard
 
 
-class HomeView(RedirectToDashboard, views.TemplateView):
+
+class HomeView(views.TemplateView):
     template_name = 'main/index_page.html'
 
     def get_context_data(self, **kwargs):

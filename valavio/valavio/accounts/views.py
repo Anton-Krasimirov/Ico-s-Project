@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.urls import reverse_lazy
 
 from valavio.accounts.forms import CreateProfileForm
-from valavio.common.view_mixins import RedirectToDashboard
+
 
 class UserRegisterView(views.CreateView):
     form_class = CreateProfileForm
